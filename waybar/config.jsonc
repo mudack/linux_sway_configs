@@ -7,7 +7,7 @@
 	// Choose the order of the modules
 	"modules-left": ["sway/workspaces", "sway/mode"],
 	// "modules-center": ["sway/window"],
-	"modules-right": ["custom/arch_update", "custom/disk_root","temperature", "cpu", "memory", "custom/mail", "network", "backlight", "pulseaudio", "clock", "battery", "idle_inhibitor", "tray"],
+	"modules-right": ["custom/arch_update", "custom/disk_root","temperature", "cpu", "memory", "custom/mail", "network", "backlight", "pulseaudio", "clock", "battery", "tray"],
 
 	// Modules configuration
 	// "sway/workspaces": {
@@ -108,7 +108,7 @@
 			"critical": 10
 		},
 		"format": "<span color='#e88939'>{icon}</span> {capacity}% ({time})",
-		"format-charging": "<span color='#e88939'> </span> {capacity}%",
+		"format-charging": "<span color='#e88939'>🗲 </span> {capacity}%",
 		"format-plugged":  "<span color='#e88939'>{icon} </span> {capacity}% ({time})",
 		// "format-good": "", // An empty format will hide the module
 		// "format-full": "",
