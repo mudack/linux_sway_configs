@@ -35,7 +35,7 @@
 	},
 	"custom/disk_root": {
 		"format": "⛁ {} ",
-		"interval": 30,
+		"interval": 120, //every 2 min
 		"exec": "df -h --output=avail / | tail -1 | tr -d ' '"
 	},
 	"temperature": {
@@ -98,12 +98,12 @@
 	"clock": {
 		"interval": 1,
 		"format": "⏰ {:%H:%M:%S}",
-		"tooltip-format": "{:%Y-%m-%d | %H:%M:%S}"
-		// "format-alt": "{:%Y-%m-%d}"
+		"tooltip-format": "{:%d-%m-%Y | %H:%M:%S}",
+		"format-alt": "📅 {:%d-%m-%Y}"
 	},
 	"battery": {
 		"states": {
-			// "good": 95,
+			"good": 95,
 			"warning": 20,
 			"critical": 10
 		},

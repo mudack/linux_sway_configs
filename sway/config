@@ -55,7 +55,7 @@ exec "setxkbmap -option 'grp:alt_shift_toggle'"
 #==================================lock
 bindsym $mod+L exec swaylock -eFfki ~/.config/lockscreen-origin.jpg
 #==================================flameshot
-bindsym $mod+Shift+S exec flameshot gui
+bindsym $mod+Shift+S exec grim -c -g "$(slurp)" ~/screenshot/last_screenshot.png
 #==================================config of keyboard layout
 #bindsym Shift+Mod1+1 exec setxkbmap us
 #bindsym Shift+Mod1+2 exec setxkbmap ru
